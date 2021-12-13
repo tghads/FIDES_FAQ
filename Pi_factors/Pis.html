@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIDES Pi factors &#8212; FIDES FAQ</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Expertool" href="../Expertool/Expertool.html" />
+    <link rel="prev" title="FIDES stresses" href="../FIDES_gen/Stresses.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">FIDES FAQ</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Intro.html">
+   FIDES FAQ Documentation
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../FIDES_gen/FIDES_Generic.html">
+   FIDES USAGE
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FIDES_gen/FIDES_usage.html">
+     FIDES usage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FIDES_gen/Mission_profile.html">
+     FIDES Mission profile
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FIDES_gen/Gen_and_Expertool.html">
+     FIDES generic questions and Expertool
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FIDES_gen/FIDES_models.html">
+     FIDES models
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FIDES_gen/Stresses.html">
+     FIDES stresses
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   FIDES Pi factors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Expertool/Expertool.html">
+   Expertool
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Pi_factors/Pis.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPi_factors/Pis.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Pi_factors/Pis.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-rgb-255-102-25-2-of-fides-process-fixed-at-2-079-on-all-parts-span">
+   <span style="color:rgb(255,102,25)">
+    δ2 of FIDES πProcess fixed at 2.079 on all parts?
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-rgb-255-102-25-difference-between-default-and-set-process-span">
+   <span style="color:rgb(255,102,25)">
+    Difference between default and set πProcess
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-rgb-255-102-25-process-questions-and-audit-span">
+   <span style="color:rgb(255,102,25)">
+    πProcess questions and audit
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-rgb-255-102-25-fides-lead-free-span">
+   <span style="color:rgb(255,102,25)">
+    FIDES π lead free
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-rgb-255-102-25-pi-pm-span">
+   <span style="color:rgb(255,102,25)">
+    Pi PM
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-rgb-255-102-25-will-1-and-1-of-fides-pm-reviewed-span">
+   <span style="color:rgb(255,102,25)">
+    Will δ1 and α1 of FIDES πPM reviewed ?
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-rgb-255-102-25-pi-application-span">
+   <span style="color:rgb(255,102,25)">
+    Pi application
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-style-color-rgb-255-102-25-pi-ruggedising-span">
+   <span style="color:rgb(255,102,25)">
+    Pi ruggedising
+   </span>
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="fides-pi-factors">
+<h1>FIDES Pi factors<a class="headerlink" href="#fides-pi-factors" title="Permalink to this headline">¶</a></h1>
+<p><strong>This section gather the questions related to Pi factors in FIDES</strong></p>
+<div class="section" id="span-style-color-rgb-255-102-25-2-of-fides-process-fixed-at-2-079-on-all-parts-span">
+<h2><span style="color:rgb(255,102,25)"> δ2 of FIDES πProcess fixed at 2.079 on all parts? </span><a class="headerlink" href="#span-style-color-rgb-255-102-25-2-of-fides-process-fixed-at-2-079-on-all-parts-span" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:rgb(255,128,128)"> <strong>Is it OK that δ2 of the FIDES πProcess is fixed of 2.079 on all parts? (ΠProcess: 2.079 if 1 to 8)</strong></span></p>
+<p>In fact, the πProcess is a value that represent the impact of all the processes used by the companies which are part of the same project. It evaluates them from the specification up to the maintenance phase.
+This was introduced in the FIDES methodology, because in the late 90s, it appeared clearly that most of the failures derivate from process failures and not from intrinsic failures of electronic components (bad specification, wrong parameter on a production tool, and so on). For example, in the early 2000s, many of the French major companies identified that 70% of the electronic failures were due to process failures. Then it was necessary to take it into consideration into a reliability methodology, and that was one of the strongest recommendations for FIDES.
+The first FIDES team, which founded the methodology, evaluated that the process part could have an influence by decreasing the reliability by a factor between 1 to 8. So, this is the reason why δ2 is set to 2.079 in order to force the πProcess in an interval between 1 and 8. To have a better understanding of the πProcess and what it stands for, we will illustrate it on an example.
+If the JAXA, the ESA and the ISRO decided to perform exactly the same satellite, with the same components, the same electronic schemes and you put the 3 satellites on the same mission, you will see that the 3 satellites will have different reliability (with 217F you will have exactly the same). These differences will be linked with the know-how of the 3 companies. This experience and know-how are materialized through the process used by each of the 3 companies, those process will lead to “”a level of rigor”” toward different aspect including electronic reliability. Then the πProcess factor is there to evaluate the strength of your process toward electronic reliability.
+Of course, you can also use this πProcess evaluation to find some improvement process aspect. And we are aware that we cannot be sure that the πProcess evaluation is exhaustive and perfectly design but it gives some convincing results to the companies which using it.</p>
+</div>
+<div class="section" id="span-style-color-rgb-255-102-25-difference-between-default-and-set-process-span">
+<h2><span style="color:rgb(255,102,25)"> Difference between default and set πProcess </span><a class="headerlink" href="#span-style-color-rgb-255-102-25-difference-between-default-and-set-process-span" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:rgb(255,128,128)"><strong>How much is the calculated failure rate difference when πProcess is completed set(by audit) and when it is set default? Do you have data?
+And if it’s possible, send me some example data…</strong></span></p>
+<p>The default πProcess value is 4. The FIDES community feedback is that most of French major companies have a much better value of πProcess (which includes the space prime companies).It means that a value of 4 should be very conservative for the JAMSS and it will be not very relevant to apply the default value.
+The NRPM Technical Note 8 provides a πProcess audit adapted to space industry in which some questions have been explained in a different way or a little bit adapted in order to match with space industry process.</p>
+<p><span style="color:rgb(255,128,128)"><strong>About the audit questionnaire, when should the default value be used?
+What’s the concerns with using the default values?</strong></span></p>
+<p>The default value of 4 as given in the 2009 FIDES guide is now considered too pessimistic, in particular for Space applications. A value of 2 would probably be a better value to consider. In general, Airbus Defence &amp; Space and Thales Alenia Space designs, for standard space applications, are evaluated below 1.3. For New Space, it is a little higher (between 1.3 and 2).</p>
+</div>
+<div class="section" id="span-style-color-rgb-255-102-25-process-questions-and-audit-span">
+<h2><span style="color:rgb(255,102,25)"> πProcess questions and audit </span><a class="headerlink" href="#span-style-color-rgb-255-102-25-process-questions-and-audit-span" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:rgb(255,128,128)"><strong>There are many questions (audit items) for setting Process Grade (πProcess). How do you get the answers? Regarding input parameters, many questions are difficult for system manufacturers to answer.</strong></span></p>
+<p>It is necessary to perform an audit (by an internal entity or an external, both are possible) in order to check at least every phase for which you are responsible of in your project. You should prepare it before in order to find the interlocutors, send them the questions they need to answer, helping them to understand what the questions stand for and what kind of proof you need. Then on the audit days (typically we need 2 or 3 days of audit to fully perform it) you should check all the proof provided and inquire about the question without proof in order to check if you can find one directly with the interlocutors.
+Of course, there is the restitution time in order to share the results and particularly the very good points and the aspects which could be improved in order to increase electronic reliability. This work must be done at the prime company and all its subcontractors in order to determine the project’s actual πProcess.
+NRPM Technical Note 8 will help you to dispatch the question to ask to the prime company and to its subcontractors. Also, please note that the full audit is being updated at the time by the FIDES team and a new one with more details and deeper explanations will be available in 2021, inside the revised FIDES guidebook.</p>
+<p><span style="color:rgb(255,128,128)"><strong>About these questions (audit items), do almost surveys fully evaluate it? Or use default frequency?
+(In the case of the default, what is the reason and background “”there is no problem with the default””?)</strong></span></p>
+<p>Most of the time the audit is performed one time for each main process family (rocket, satellite old fashion, satellite new space, …) applied at a company. The results are used for the different projects unless the process is particularly different between the new project we want to evaluate and the previous which was evaluated by the audit. It is useful to perform it again sometimes.</p>
+<p><span style="color:rgb(255,128,128)"><strong>How long does it take a supplier or prime maker to fully implement an audit question? (In the case of one internal manufacturing component, I would like to know the needed time for the investigation answering audit questions.)</strong></span></p>
+<p>2 to 3 days on site for an interviewer, and one or two interviewees per slot of 2-3h, depending on the topics addressed and the people involved. Additionnally, you should consider 1 week to prepare the audit (who to interview, question selection, file preparation…) and some more time to collect/check the evidence, and to produce a report.</p>
+</div>
+<div class="section" id="span-style-color-rgb-255-102-25-fides-lead-free-span">
+<h2><span style="color:rgb(255,102,25)"> FIDES π lead free </span><a class="headerlink" href="#span-style-color-rgb-255-102-25-fides-lead-free-span" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:rgb(255,128,128)"><strong>Is FIDES πLF (lead-free correction factor) calculated manually?
+(The tool does not have a calculation sheet)</strong></span></p>
+<p>Indeed there is no tool available for this part at the time, but ExperTool (which is available for free and validated by FIDES Team) can apply the value obtained through your own calculation.</p>
+<p><span style="color:rgb(255,128,128)"><strong>Does FIDES ExperTool(non portable version) include a lead-free calculation tool?
+(We installed the portable version)</strong></span></p>
+<p>No, you need to calculate it separately and add the result at the top of the mission profile sheet in ExperTool</p>
+</div>
+<div class="section" id="span-style-color-rgb-255-102-25-pi-pm-span">
+<h2><span style="color:rgb(255,102,25)"> Pi PM </span><a class="headerlink" href="#span-style-color-rgb-255-102-25-pi-pm-span" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:rgb(255,128,128)"><strong>About the “Electronic Component” sheet : When should the QA_Manufacure factor, QA_Component factor, RA_Manufacure factor, and Experience factor: ε fields of “PI_PART” be entered?
+πPM of “Pi_PROCESS &amp; Pi_PM &amp; LIFE PROFILE” is required.</strong></span></p>
+<p>The order of precedence for the three Pi Manufacturing calculations is as follows:</p>
+<ol class="simple">
+<li><p>Individual definition for the 4 factors on the “”electronic components”” sheet</p></li>
+<li><p>the Pi PM defined for each part on the “”electronic components”” sheet</p></li>
+<li><p>the default Pi PM at the top of the “”mission profile”” sheet for active and passive parts</p></li>
+</ol>
+<p></p>
+<p><span style="color:rgb(255,128,128)">**The Pi PM defined for each part on the “electronic components“ sheet. Where does it mean? **</span></p>
+<p>It is the blue column just on the left of the four Pi PM manufacturing columns on the electronic components sheet</p>
+</div>
+<div class="section" id="span-style-color-rgb-255-102-25-will-1-and-1-of-fides-pm-reviewed-span">
+<h2><span style="color:rgb(255,102,25)"> Will δ1 and α1 of FIDES πPM reviewed ? </span><a class="headerlink" href="#span-style-color-rgb-255-102-25-will-1-and-1-of-fides-pm-reviewed-span" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:rgb(255,128,128)"><strong>Are δ1 and α1 of FIDES πPM reviewed at the timing of revision?</strong></span></p>
+<p>They will not be reviewed for the next revision, but could be in a future revision if the FIDES community thinks they must be reviewed. If it seems necessary to revise it, a working group will be created in order to evaluate if they need to be updated and then with which value.
+Though, the next revision will update the QAmanufacturer, QAcomponent, RAcomponent into the πPM. In addition, NRPM Technical Note 8 also provides some modifications for QAmanufacturer, QAcomponent and RAcomponent for the space industry (some are linked with the next revision update, some other are there uniquely for the space industry).</p>
+</div>
+<div class="section" id="span-style-color-rgb-255-102-25-pi-application-span">
+<h2><span style="color:rgb(255,102,25)"> Pi application </span><a class="headerlink" href="#span-style-color-rgb-255-102-25-pi-application-span" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:rgb(255,128,128)"><strong>In the “”PI APPLICATION”” sheet, both Imposed and Detailed can be entered. When is Imposed used? Is there an index that can be used as a guide when entering a value in Imposed?</strong></span></p>
+<p>A Pi Application has been detailed for Space applications (it is also one of the outputs of the NRPM study).</p>
+<p><span style="color:rgb(255,128,128)"><strong>When is π application of “”Imposed”” entered?　(In the case of we don’t know the details of the π application?) Also, I would like to know the width of π application and the default value (reference).</strong></span></p>
+<p>It can be used for instance for confidential applications (military) where the finally customer does not want to give the details of the application but has to provide a figure Range:   1&lt; ∏application  &lt;10
+No default values available because it really depends on the type of application (can be around 8 for military use of fighters, around 1.1 for satellites in orbit).</p>
+</div>
+<div class="section" id="span-style-color-rgb-255-102-25-pi-ruggedising-span">
+<h2><span style="color:rgb(255,102,25)"> Pi ruggedising </span><a class="headerlink" href="#span-style-color-rgb-255-102-25-pi-ruggedising-span" title="Permalink to this headline">¶</a></h2>
+<p><span style="color:rgb(255,128,128)"><strong>In the “”PI RUGGEDISING”” sheet, both Imposed and Detailed can be entered. When is Imposed used? What are the widths of π Ruggedising? (Default 1.7 has been confirmed from the manual)”</strong></span></p>
+<p>When you can have the detail, prefer the detailed version. If you can’t, put a default value. For Space applications, the pi ruggedising should be as close to 1 as possible. 1.9 is the absolute worst value, but in ADS for instance, we consider a value around 1.18</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Pi_factors"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../FIDES_gen/Stresses.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">FIDES stresses</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../Expertool/Expertool.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Expertool</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Tony GHUELDRE<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
